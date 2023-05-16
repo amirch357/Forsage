@@ -18,7 +18,7 @@ const upload = multer({
     storage: storage
 });
 
-router.post("/ads_upload",upload.array("vedios",10),Controller.handler.UploadAds)
-router.get('/get_ads',Controller.handler.getAds)
+router.post("/ads_upload",upload.array("vedios",10),Controller.UploadAds)
+router.get('/get_ads',Controller.getAds)
 
 module.exports= router
