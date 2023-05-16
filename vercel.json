@@ -2,11 +2,11 @@
   {
     "functions": {
       "./index.js": {
-        "memory": 5005,
+        "memory": 1024,
         "maxDuration": 10
       },
       "/": {
-        "memory": 5005,
+        "memory": 1024,
         "maxDuration": 10
       }
     }
