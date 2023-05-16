@@ -3,10 +3,7 @@
     "builds": [
       {
         "src": "./index.js",
-        "use": "@vercel/node",
-        "env": {
-            "MAX_PAYLOAD_SIZE": "50mb"
-          }
+        "use": "@vercel/node"
       }
     ],
     "routes": [

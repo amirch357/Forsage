@@ -33,7 +33,7 @@ const getAds  = async(req,res,next)=>{
 
 
 
-module.exports = {
+module.exports.handler = {
     UploadAds,
     getAds
 }
