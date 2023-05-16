@@ -6,13 +6,15 @@ const path = require('path');
 const connectDatabase = require("./src/config/db")
 const AdsRouter = require("./src/Routes/AdsRoutes")
 const fs = require("fs")
+var bodyParser = require('body-parser');
 connectDatabase()
 app.use(cookieParser());
 // app.use(cors());
 
 app.use(express.json());
 
-
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 
 app.use("/videos", express.static(path.join(__dirname, './src/ads')));
